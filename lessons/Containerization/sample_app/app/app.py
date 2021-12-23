@@ -10,7 +10,7 @@ big_data = {
 @app.route('/', methods=['GET'])
 def hello_world():
     return jsonify({
-        'Key': 'Value'
+        'Key': 'Value2'
     })
     
 
@@ -39,5 +39,5 @@ def post_request():
     return jsonify(big_data)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True, host='0.0.0.0')
     
